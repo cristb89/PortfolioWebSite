@@ -1,3 +1,11 @@
 #about-us{
     background-color: #303131;
 }
+
+#portfolio{
+    background-color: #303131;
+}
+
+#contact img{
+    filter: contrast(0%);
+}
