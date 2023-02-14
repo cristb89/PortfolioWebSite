@@ -9,3 +9,17 @@
 #contact img{
     filter: contrast(0%);
 }
+
+.btn-wtsp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    line-height: 41px;
+    bottom: 50px;
+    right: 12px;
+    border-radius: 0.375rem;
+}
+
+span img{
+    filter: contrast(30%);
+}
