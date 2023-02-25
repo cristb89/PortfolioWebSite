@@ -2,6 +2,26 @@
     background-color: #303131;
 }
 
+#ux-research{
+    background-image: url(../img/ux_research2.jpg);
+
+}
+
+#web-development{
+    background-image: url(../img/web_development3.jpg);
+
+}
+
+#app-design{
+    background-image: url(../img/app_design2.jpg);
+
+}
+
+#web-design{
+    background-image: url(../img/web_design2.jpg);
+
+}
+
 #portfolio{
     background-color: #303131;
 }
