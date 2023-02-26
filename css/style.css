@@ -1,0 +1,63 @@
+#about-us{
+    background-color: #303131;
+}
+
+#ux-research{
+    background-image: url(../img/ux_research2.jpg);
+
+}
+
+#web-development{
+    background-image: url(../img/web_development3.jpg);
+
+}
+
+#app-design{
+    background-image: url(../img/app_design2.jpg);
+
+}
+
+#web-design{
+    background-image: url(../img/web_design2.jpg);
+
+}
+
+.animacion{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba{
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#portfolio{
+    background-color: #303131;
+}
+
+#contact img{
+    filter: contrast(0%);
+}
+
+.btn-wtsp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    line-height: 41px;
+    bottom: 50px;
+    right: 12px;
+    border-radius: 0.375rem;
+}
+
+span img{
+    filter: contrast(30%);
+}

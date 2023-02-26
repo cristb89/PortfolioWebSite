@@ -6,13 +6,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/validacion.js"></script>
     <meta name="author" content="Cristian Brandan">
     <meta name="description" content="Cristian Brandan - Full Stack Web Developer">
     <meta name="keywords" content="Cristian, Brandan, Cristian Brandan, Full Stack, Programador, Desarrollador, Deb, Developer, Web, HTML, CSS, JavaScript, PHP, Bootstrap, Front End, Back End">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Portfolio - Cristian Brandan</title>
 </head>
-<body>
-    <script src="js/bootstrap.min.js"></script>
+<body class="bg-dark">
+    <span>
+        <a href="#menu-navegacion" class="text-center z-1 btn-wtsp bg-warning animacion">
+            <img id="flecha-arriba" class="w-75" src="img/arrow-up-square.svg" alt="Icono de flecha hacia arriba">
+        </a>
+    </span>
+    <header class="navbar navbar-expand-lg navbar-dark py-2">
+        <nav id="menu-navegacion" class="container">
+            <a class="navbar-brand text-warning fs-1 fw-bold" href="index.html">C B</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burger-menu" aria-controls="burger-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="burger-menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                      <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="banner" class="pt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 py-5">
+                        <h2 class="display-1 fw-bold text-light m-0">I'm Cristian</h2>
+                        <h4 class="text-secondary my-1">Freelance Web & Mobile UI/UX Designer</h4>
+                        <a id="boton-contratame" href="#contact" class="btn btn-warning w-50 mt-4 py-3">Hire Me</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="img/avatar.png" alt="Avatar de Cristian Brandan">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="py-5 animacion">
+            <div class="container">
+                <div class="row align-items-center">
+                    <h2 class="col-sm-6 display-5 fw-bold text-light text-center">About Me</h2>
+                    <div class="col-sm-6">
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, officia?</p>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quae!</p>
+                        <div>
+                            <a class="btn btn-warning" target="_blank" href="https://github.com/cristb89">View Works</a>
+                            <a download class="btn btn-warning" href="doc/Curiculum Vitae - Carlos Cristian David Brandan.pdf">Download CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="py-5 animacion">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-light text-center pb-5">Services</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div id="ux-research" class="card border p-3">
+                            <div class="card-body text-light">
+                                <img src="img/phone_icon.png" alt="Icono de celular">
+                                <h2 class="card-title">UX Research</h2>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, possimus?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="web-development" class="card border p-3">
+                            <div class="card-body text-light">
+                                <img src="img/code_icon.png" alt="Icono de codigo de programación">
+                                <h2 class="card-title">Web Development</h2>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, possimus?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="app-design" class="card border p-3">
+                            <div class="card-body text-light">
+                                <img src="img/phone_icon.png" alt="Icono de celular">
+                                <h2 class="card-title">App Design</h2>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, possimus?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="web-design" class="card border p-3">
+                            <div class="card-body text-light">
+                                <img src="img/design_layout_icon.png" alt="Icono de layout web">
+                                <h2 class="card-title">Web Design</h2>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, possimus?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="py-5 animacion">
+            <div class="container">
+                <h2 class="display-5 fw-bold text-light text-center pb-5">Portfolio</h2>
+                <div class="card-group">
+                    <div class="card bg-secondary border-light">
+                        <img src="img/flixada.jpg" class="card-img-top" alt="Captura de la página principal de Flixada">
+                        <div class="card-body">
+                            <h5 class="card-title">Flixada Streaming</h5>
+                            <p class="card-text">Web layout practice, use of agile methodologies and teamwork with trello panel.</p>
+                            <div class="card-footer">
+                                <a class="btn btn-warning" target="_blank" href="https://flixadastream.netlify.app/">Go to website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary border-light">
+                        <img src="img/sistema-de-gestion-de-libros.jpg" class="card-img-top" alt="Caputa del listado de libros de una página de ventas}">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Sale</h5>
+                            <p class="card-text">Crud of a sales management system. user: admin / password: admin.</p>
+                            <div class="card-footer">
+                                <a class="btn btn-warning" target="_blank" href="https://ventadelibrosfacet.000webhostapp.com/">Go to website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary border-light">
+                        <img src="img/pokedex.jpg" class="card-img-top" alt="Captura de la página principal Pokedex">
+                        <div class="card-body">
+                            <h5 class="card-title">Pokedex</h5>
+                            <p class="card-text">Practice to strengthen the management of Git and GitHub.</p>
+                            <div class="card-footer">
+                                <a class="btn btn-warning" target="_blank" href="https://pokedex-g2.netlify.app/">Go to website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-5 animacion">
+            <div class="container">
+                <div class="row">
+                    <h2 class="col-12 display-5 fw-bold text-light text-center pb-5">Contact Me</h2>
+                    <div class="col-md-6 text-secondary">
+                        <h2>Contact Info</h2>
+                        <p><img class="me-2" src="img/geo-alt-fill.svg" alt="Icono de ubicación">San Miguel De Tucumán, Tucumán, Argentina</p>
+                        <p><img class="me-2" src="img/envelope-fill.svg" alt="Icono de correo electrónico"><a class="text-secondary text-decoration-none" href="mailto:cdbbrandan@gmail.com">cdbbrandan@gmail.com</a></p>
+                        <p><img class="me-2" src="img/telephone-fill.svg" alt="Icono de telefono"><a class="text-secondary text-decoration-none" href="tel:+543816283595">3816283595</a></p>
+                        <p><img class="me-2" src="img/globe-americas.svg" alt="Icono de planeta"><a class="text-secondary text-decoration-none" href="https://cristianbrandan.netlify.app">https://cristianbrandan.netlify.app</a></p>
+                        <h2>Follow Me</h2>
+                        <ul class="nav d-flex">
+                            <a class="mx-2" href="https://www.linkedin.com/in/cristian-brandan/" target="_blank"><img id="linkedin" class="" src="img/linkedin.svg" alt="Icono de Linkedin" width="25px"></a>
+                            <a class="mx-2" href="https://www.facebook.com/cristian.brandan.89" target="_blank"><img id="facebook" class="" src="img/facebook.svg" alt="Icono de Facebook" width="25px"></a>
+                            <a class="mx-2" href="https://www.instagram.com/cristian_brandan/" target="_blank"><img id="instagram" class="" src="img/instagram.svg" alt="Icono de Instagram" width="25px"></a>
+                        </ul>
+                    </div>
+                    <form class="col-md-6 row g-3 text-secondary" action="" method="post" onsubmit="return validacion()">
+                        <div class="col-12">
+                            <label for="Nombre" class="form-label">NAME *</label>
+                            <input type="text" class="form-control bg-secondary" id="Nombre" name="nombre" placeholder="Type your name" maxlength="30" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Telefono" class="form-label">PHONE NUMBER *</label>
+                            <input type="tel" class="form-control bg-secondary" id="Telefono" name="tel" placeholder="Type your phone number" pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Correo" class="form-label">EMAIL *</label>
+                            <input type="email" class="form-control bg-secondary" id="Correo" name="mail" placeholder="Type your email address" maxlength="50" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="Mensaje" class="form-label">YOUR MESSAGE *</label>
+                            <textarea name="mensaje" class="form-control bg-secondary" id="Mensaje" name="mensaje" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-warning">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4 border-top">
+        <div class="container text-center">
+            <p class="text-secondary m-0">Copyright &copy; 2023 <a class="text-warning text-decoration-none fw-bold" href="index.html">Cristian Brandan</a></p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/animacion.js"></script>
 </body>
 </html>
