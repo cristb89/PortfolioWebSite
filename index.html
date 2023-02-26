@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/validacion.js"></script>
     <meta name="author" content="Cristian Brandan">
     <meta name="description" content="Cristian Brandan - Full Stack Web Developer">
     <meta name="keywords" content="Cristian, Brandan, Cristian Brandan, Full Stack, Programador, Desarrollador, Deb, Developer, Web, HTML, CSS, JavaScript, PHP, Bootstrap, Front End, Back End">
@@ -172,21 +173,21 @@
                             <a class="mx-2" href="https://www.instagram.com/cristian_brandan/" target="_blank"><img id="instagram" class="" src="img/instagram.svg" alt="" width="25px"></a>
                         </ul>
                     </div>
-                    <form class="col-md-6 row g-3 text-secondary" action="" method="post">
+                    <form class="col-md-6 row g-3 text-secondary" action="" method="post" onsubmit="return validacion()">
                         <div class="col-12">
-                            <label for="Nombre" class="form-label">NAME</label>
-                            <input type="text" class="form-control bg-secondary" id="Nombre" name="nombre" placeholder="Type your name" required>
+                            <label for="Nombre" class="form-label">NAME *</label>
+                            <input type="text" class="form-control bg-secondary" id="Nombre" name="nombre" placeholder="Type your name" maxlength="30" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="Telefono" class="form-label">PHONE NUMBER</label>
+                            <label for="Telefono" class="form-label">PHONE NUMBER *</label>
                             <input type="tel" class="form-control bg-secondary" id="Telefono" name="tel" placeholder="Type your phone number" pattern="[0-9]{10}" minlength="10" maxlength="10" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="Correo" class="form-label">EMAIL</label>
-                            <input type="email" class="form-control bg-secondary" id="Correo" name="mail" placeholder="Type your email address" required>
+                            <label for="Correo" class="form-label">EMAIL *</label>
+                            <input type="email" class="form-control bg-secondary" id="Correo" name="mail" placeholder="Type your email address" maxlength="50" required>
                         </div>
                         <div class="col-12">
-                            <label for="Mensaje" class="form-label">YOUR MESSAGE</label>
+                            <label for="Mensaje" class="form-label">YOUR MESSAGE *</label>
                             <textarea name="mensaje" class="form-control bg-secondary" id="Mensaje" name="mensaje" cols="30" rows="10" placeholder="Type your message here" required></textarea>
                         </div>
                         <div class="col-12">
